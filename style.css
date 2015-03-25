@@ -31,11 +31,11 @@
 #preview > canvas,
 #library > a,
 header > p {
-	-moz-transition: 1s;
-	-ms-transition: 1s;
-	-o-transition: 1s;
-	-webkit-transition: 1s;
-	transition: 1s;	
+	-moz-transition: .6s;
+	-ms-transition: .6s;
+	-o-transition: .6s;
+	-webkit-transition: .6s;
+	transition: .6s;	
 }
 
 #importexport > textarea,
@@ -51,7 +51,7 @@ body {
 	margin: 1em 5% 0;
 	padding-left: 330px; 
 	background: white;
-	font-family: 'Hiragino Kaku Gothic Pro', 'Segoe UI', 'Apple Gothic', Tahoma, 'Helvetica Neue', sans-serif;
+	font-family: 'helvetica neue',arial,'hiragino sans gb',stheiti,'wenquanyi micro hei',\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;
 	line-height: 1.4;
 }
 
@@ -284,6 +284,8 @@ section {
 	section > h1 + p {
 		margin: -.5em 0 1em 0;
 		color: gray;
+		white-space: nowrap;
+		word-wrap: normal;
 	}
 
 #settings > h1 {
@@ -322,10 +324,10 @@ section {
 #library > a {
 	position: relative;
 	float: left;
-	width: 100px;
+	width: 140px;
 	margin: 0 .8em 1em 0;
-	color: #999;
-	font-size: 110%;
+	color: #666;
+	font-size: 100%;
 	text-align: center;
 	text-decoration: none;
 	cursor: pointer;
@@ -345,8 +347,9 @@ section {
 		position: relative; 
 		left: 0;
 		background: #e5e5e5;
-		
 		border-radius: 5px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	
 	#library > a:hover > canvas,
@@ -369,10 +372,14 @@ section {
 	#library > a > button {
 		display: none;
 		position: absolute;
-		top: -5px;
-		right: -5px;
+		top: -6px;
+		right: 6px;
+		width: 22px;
+		height: 22px;
+		padding: 0 0 3px;
+		text-align: center;
 		background: black;
-		font-size: 80%;
+		font-size: 100%;
 		border-radius: 50%;
 		box-shadow: 1px 1px 8px -1px black;
 	}
@@ -398,6 +405,7 @@ section {
 	clear: both;
 	font-size: 80%;
 	color: #444;
+	padding-top: 20px;
 }
 
 #importexport {
@@ -498,10 +506,10 @@ body > footer {
 @media (min-width:1330px) {
 	#preview {
 		float: left;
-		width: 400px;
+		width: 380px;
 	}
 	
 	#library {
-		margin-left: 490px;
+		/*margin-left: 490px;*/
 	}
 }
